@@ -1,5 +1,5 @@
 !======================================================================
-! Project 1 – 1D unsteady channel flow with periodic forcing
+! 1D unsteady channel flow with periodic forcing
 !
 ! Time-dependent solution of a 1D diffusion-type equation using
 ! a theta-method (Crank–Nicolson: theta = 0.5) and a tridiagonal solver.
@@ -235,3 +235,4 @@ subroutine TRIDAG(ilo, ihi, low, diag, up, d)
         d(i) = (d(i) - up(i) * d(i+1)) / diag(i)
     end do
 end subroutine TRIDAG
+
